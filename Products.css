@@ -1,0 +1,328 @@
+/* =========================================
+   PAEDSENSE PRODUCTS PAGE
+   ========================================= */
+
+
+/* ---------- PAGE ---------- */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ---------- COMING SOON SECTION ---------- */
+
+.products-coming-soon {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 70px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #f8f9ff 0%,
+    #eef4ff 50%,
+    #f8f3ff 100%
+  );
+
+  box-sizing: border-box;
+}
+
+
+/* ---------- COMING SOON CARD ---------- */
+
+.products-coming-card {
+  width: 100%;
+  max-width: 760px;
+
+  text-align: center;
+
+  padding: 65px 45px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  border-radius: 35px;
+
+  box-shadow:
+    0 20px 55px rgba(0, 0, 0, 0.12);
+
+  box-sizing: border-box;
+}
+
+
+/* ---------- EMPTY BASKET ---------- */
+
+.products-basket {
+  font-size: 85px;
+  line-height: 1;
+
+  margin-bottom: 25px;
+
+  animation: basketFloat 3s ease-in-out infinite;
+}
+
+
+/* subtle floating animation */
+
+@keyframes basketFloat {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+
+/* ---------- WAIT A SEC ---------- */
+
+.products-coming-title {
+
+  font-family: Merriweather, serif;
+
+  font-size: 46px;
+
+  line-height: 1.2;
+
+  margin: 0 0 15px;
+
+  color: #333333;
+
+  font-weight: 700;
+}
+
+
+/* ---------- COMING SOON HEADING ---------- */
+
+.products-coming-subtitle {
+
+  font-family: Merriweather, serif;
+
+  font-size: 31px;
+
+  line-height: 1.4;
+
+  margin: 0 0 25px;
+
+  color: #6a1b9a;
+
+  font-weight: 700;
+}
+
+
+/* ---------- DESCRIPTION ---------- */
+
+.products-coming-description {
+
+  font-family: Roboto, sans-serif;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  color: #666666;
+
+  margin: 0 auto 30px;
+
+  max-width: 600px;
+}
+
+
+/* ---------- COMING SOON BADGE ---------- */
+
+.products-coming-badge {
+
+  display: inline-block;
+
+  padding: 13px 32px;
+
+  border-radius: 50px;
+
+  background: #6a1b9a;
+
+  color: #ffffff;
+
+  font-family: Roboto, sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  box-shadow:
+    0 6px 18px rgba(106, 27, 154, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.products-coming-badge:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 9px 22px rgba(106, 27, 154, 0.35);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 991px) {
+
+  .products-coming-soon {
+
+    min-height: 600px;
+
+    padding: 60px 25px;
+  }
+
+
+  .products-coming-card {
+
+    max-width: 680px;
+
+    padding: 55px 35px;
+  }
+
+
+  .products-coming-title {
+
+    font-size: 40px;
+  }
+
+
+  .products-coming-subtitle {
+
+    font-size: 27px;
+  }
+
+
+  .products-basket {
+
+    font-size: 75px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 767px) {
+
+  .products-coming-soon {
+
+    min-height: 560px;
+
+    padding: 45px 20px;
+  }
+
+
+  .products-coming-card {
+
+    padding: 45px 25px;
+
+    border-radius: 25px;
+  }
+
+
+  .products-basket {
+
+    font-size: 65px;
+
+    margin-bottom: 20px;
+  }
+
+
+  .products-coming-title {
+
+    font-size: 34px;
+  }
+
+
+  .products-coming-subtitle {
+
+    font-size: 24px;
+  }
+
+
+  .products-coming-description {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+  }
+
+
+  .products-coming-badge {
+
+    font-size: 14px;
+
+    padding: 12px 25px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 575px) {
+
+  .products-coming-soon {
+
+    min-height: 520px;
+
+    padding: 35px 15px;
+  }
+
+
+  .products-coming-card {
+
+    padding: 40px 20px;
+
+    border-radius: 22px;
+  }
+
+
+  .products-basket {
+
+    font-size: 58px;
+  }
+
+
+  .products-coming-title {
+
+    font-size: 30px;
+  }
+
+
+  .products-coming-subtitle {
+
+    font-size: 21px;
+  }
+
+
+  .products-coming-description {
+
+    font-size: 15px;
+  }
+
+}
